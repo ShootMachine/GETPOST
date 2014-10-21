@@ -28,19 +28,16 @@
         
         UIAlertView *al = [[UIAlertView alloc]initWithTitle:@"请求成功" message:nil delegate:nil cancelButtonTitle:@"关闭" otherButtonTitles:nil, nil];
         [al show];
-        NSLog(@"json - %@",json);
+        
+        NSLog(@"sucess json - %@",json);
         
     } failur:^(NSError *error) {
         
-        UIAlertView *al = [[UIAlertView alloc]initWithTitle:@"在 ViewController,修改接口地址,请求失败" message:[error description] delegate:nil cancelButtonTitle:@"关闭" otherButtonTitles:nil, nil];
+        UIAlertView *al = [[UIAlertView alloc]initWithTitle:@"请在 ViewController,修改接口地址,请求失败" message:[error description] delegate:nil cancelButtonTitle:@"关闭" otherButtonTitles:nil, nil];
         [al show];
         
+        NSLog(@"error  - %@",[error description]);
     }];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end
