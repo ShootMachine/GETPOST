@@ -205,11 +205,11 @@
 		18E1E77719F63A5A0008FF95 /* GETPOST */ = {
 			isa = PBXGroup;
 			children = (
-				18E1E79E19F63A5A0008FF95 /* BaseHttpTool.h */,
-				18E1E79F19F63A5A0008FF95 /* BaseHttpTool.m */,
 				18E1E77819F63A5A0008FF95 /* AFNetworking */,
 				18E1E7A019F63A5A0008FF95 /* FMDB */,
 				18E1E7AC19F63A5A0008FF95 /* Reachability */,
+				18E1E79E19F63A5A0008FF95 /* BaseHttpTool.h */,
+				18E1E79F19F63A5A0008FF95 /* BaseHttpTool.m */,
 				18E1E7AF19F63A5A0008FF95 /* YTKKeyValueStore.h */,
 				18E1E7B019F63A5A0008FF95 /* YTKKeyValueStore.m */,
 			);
@@ -612,6 +612,7 @@
 				18E1E77319F63A4C0008FF95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18E1E77419F63A4C0008FF95 /* Build configuration list for PBXNativeTarget "GETPOSTTests" */ = {
 			isa = XCConfigurationList;
@@ -620,6 +621,7 @@
 				18E1E77619F63A4C0008FF95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -97,6 +97,8 @@ static YTKKeyValueStore *store;
     }
 }
 
+#warning 如果需要使用 ASI 请注释 AFN 打开这里的 ASI
+
 //+(void)requestWithMethod:(NSString *)method url:(NSString *)url parameters:(NSDictionary *)parameters sucess:(BaseHttpToolSucess)sucess failur:(BaseHttpToolFailur)failur
 //{
 //    ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:[NSURL URLWithString:url]];
@@ -123,7 +125,6 @@ static YTKKeyValueStore *store;
 //        NSDictionary *datassin = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:nil];
 //        if (sucess) {
 //            sucess(datassin);
-////            NSLog(@"sucess=====%@",codes);
 //        }
 //    }];
 //
@@ -143,19 +144,5 @@ static YTKKeyValueStore *store;
     int status = [connectionNetWork currentReachabilityStatus];
     return status;
 }
-
-/**
- *  后端需要 每个项目情况不同 根据不同需求 更改
- */
-//    NSString *codes;
-//    NSUserDefaults *us=[NSUserDefaults standardUserDefaults];
-//    if ([us objectForKey:@"httpcode"]) {
-//        codes=[us objectForKey:@"httpcode"];
-//    }else{
-//        codes=[NSString stringWithFormat:@"\\$\\@-%d%d-SEXUALIFEHAIWANG",arc4random_uniform(100000),arc4random_uniform(100000)];
-//        [us setValue:codes forKey:@"httpcode"];
-//        [us synchronize];
-//    }
-//    [request setPostValue:codes forKey:@"CODE"];
 
 @end
