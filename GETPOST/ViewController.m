@@ -19,17 +19,21 @@
     [super viewDidLoad];
     
     /**
+     *  自行修改接口地址 否则请求失败
      *  带缓存的get请求   需要导入 sql 框架
      */
+
     NSString *url = @"www.xxx.com";
-    
     [BaseHttpTool getCacheWithUrl:url parameters:nil sucess:^(NSDictionary *json) {
         
+        UIAlertView *al = [[UIAlertView alloc]initWithTitle:@"请求成功" message:nil delegate:nil cancelButtonTitle:@"关闭" otherButtonTitles:nil, nil];
+        [al show];
         NSLog(@"json - %@",json);
         
     } failur:^(NSError *error) {
         
-        NSLog(@"error - %@",[error description]);
+        UIAlertView *al = [[UIAlertView alloc]initWithTitle:@"在 ViewController,修改接口地址,请求失败" message:[error description] delegate:nil cancelButtonTitle:@"关闭" otherButtonTitles:nil, nil];
+        [al show];
         
     }];
 }
