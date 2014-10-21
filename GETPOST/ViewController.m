@@ -26,7 +26,7 @@
     NSString *url = @"www.xxx.com";
     [BaseHttpTool getCacheWithUrl:url parameters:nil sucess:^(NSDictionary *json) {
         
-        UIAlertView *al = [[UIAlertView alloc]initWithTitle:@"请求成功" message:nil delegate:nil cancelButtonTitle:@"关闭" otherButtonTitles:nil, nil];
+        UIAlertView *al = [[UIAlertView alloc]initWithTitle:@"请求成功,往下看控制器打印的结果吧" message:nil delegate:nil cancelButtonTitle:@"关闭" otherButtonTitles:nil, nil];
         [al show];
         
         NSLog(@"sucess json - %@",json);
